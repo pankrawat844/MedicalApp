@@ -1,4 +1,4 @@
-package com.app.medicalapp.activity.auth
+package com.app.medicalapp.activity.auth.login
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

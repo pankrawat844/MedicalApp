@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MedicalApp</string>
+    <string-array name="category">
+        <item>DOCTORS</item>
+        <item>DIAGNOSTIC CENTER/LAB</item>
+        <item>BLOOD BANK</item>
+        <item>PHARMACY</item>
+    </string-array>
 </resources>
