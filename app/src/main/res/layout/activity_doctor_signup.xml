@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/black"
+    android:background="@drawable/gradient_1"
     >
 
 
@@ -31,7 +31,11 @@
                 android:layout_height="80dp"
                 android:layout_marginTop="20dp"
                 tools:srcCompat="@tools:sample/avatars" />
-
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="5dp">
             <TextView
                 android:fontFamily="@font/open_sans_regular"
                 android:layout_width="match_parent"
@@ -41,47 +45,32 @@
                 android:hint="UserName"
                 android:text="Dr.Shyam"
                 android:textStyle="bold"
-                android:layout_marginLeft="5dp"
-                android:inputType="textEmailAddress"
                 android:textColor="@color/white"
                 android:textColorHint="#80ffffff" />
 
+
+
+    <EditText
+        android:id="@+id/add_clinic"
+        android:fontFamily="@font/open_sans_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.8dp"
+        android:background="#00000000"
+        android:hint="ADD CLINIC"
+
+        android:textColor="@color/white"
+        android:textColorHint="#80ffffff" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="9dp"
+        android:background="#E6ffffff" />
+</LinearLayout>
 
 </LinearLayout>
 
-
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="28dp"
-                android:background="#00000000"
-                android:prompt="SELECT CATEGORY"
-
-                android:entries="@array/category"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginTop="9dp"
-                android:background="#E6ffffff" />
-
-            <EditText
-                android:id="@+id/add_clinic"
-                android:fontFamily="@font/open_sans_regular"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="38.8dp"
-                android:background="#00000000"
-                android:hint="ADD CLINIC"
-                android:inputType="numberPassword"
-                android:maxLength="6"
-                android:textColor="@color/white"
-                android:textColorHint="#80ffffff" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginTop="9dp"
-                android:background="#E6ffffff" />
 
             <EditText
                 android:id="@+id/education_qualification"
@@ -91,8 +80,7 @@
                 android:layout_marginTop="38.8dp"
                 android:background="#00000000"
                 android:hint="EDUCATION QUALIFICATION"
-                android:inputType="numberPassword"
-                android:maxLength="6"
+
                 android:textColor="@color/white"
                 android:textColorHint="#80ffffff" />
 
@@ -109,9 +97,24 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="38.8dp"
                 android:background="#00000000"
-                android:hint=""
-                android:inputType="numberPassword"
-                android:maxLength="6"
+                android:hint="REGISTRATION DETAILS"
+
+                android:textColor="@color/white"
+                android:textColorHint="#80ffffff" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="9dp"
+                android:background="#E6ffffff" />
+            <EditText
+                android:fontFamily="@font/open_sans_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38.8dp"
+                android:background="#00000000"
+                android:hint="SPECIALIZATION"
+
                 android:textColor="@color/white"
                 android:textColorHint="#80ffffff" />
 
@@ -121,7 +124,68 @@
                 android:layout_marginTop="9dp"
                 android:background="#E6ffffff" />
 
+            <EditText
+                android:fontFamily="@font/open_sans_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38.8dp"
+                android:background="#00000000"
+                android:hint="@string/specialization"
+                android:textColor="@color/white"
+                android:textColorHint="#80ffffff" />
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="9dp"
+                android:background="#E6ffffff" />
+
+            <EditText
+                android:fontFamily="@font/open_sans_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38.8dp"
+                android:background="#00000000"
+                android:hint="@string/experience"
+                android:textColor="@color/white"
+                android:textColorHint="#80ffffff" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="9dp"
+                android:background="#E6ffffff" />
+
+            <EditText
+                android:fontFamily="@font/open_sans_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38.8dp"
+                android:background="#00000000"
+                android:hint="@string/consultation_fees"
+                android:textColor="@color/white"
+                android:textColorHint="#80ffffff" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="9dp"
+                android:background="#E6ffffff" />
+            <EditText
+                android:fontFamily="@font/open_sans_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38.8dp"
+                android:background="#00000000"
+                android:hint="@string/bank_details"
+                android:textColor="@color/white"
+                android:textColorHint="#80ffffff" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="9dp"
+                android:background="#E6ffffff" />
             <TextView
                 android:fontFamily="@font/open_sans_bold"
                 android:layout_width="match_parent"

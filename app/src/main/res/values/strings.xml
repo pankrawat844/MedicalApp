@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">MedicalApp</string>
+    <string name="specialization">SPECIALIZATION</string>
+    <string name="experience">EXPERIENCE</string>
+    <string name="consultation_fees">CONSULTATION FEES</string>
+    <string name="bank_details">BANK DETAIlS</string>
     <string-array name="category">
         <item>DOCTORS</item>
         <item>DIAGNOSTIC CENTER/LAB</item>
