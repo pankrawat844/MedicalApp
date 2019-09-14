@@ -4,25 +4,35 @@
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.auth.signup.UploadDoctorActivity"></activity>
-        <activity android:name=".activity.auth.signup.Doctor_Signup" />
-        <activity android:name=".activity.auth.signup.SignupActivity" />
-        <activity android:name=".activity.auth.login.LoginActivity" >
-
+        <activity android:name="com.app.medicalapp.activity.auth.signup.doc.docDetails.clinicDetails.ClinicAddressActivity"/>
+        <activity android:name="com.app.medicalapp.activity.auth.signup.doc.docDetails.clinicDetails.AddClinicActivity" />
+        <activity android:name=".activity.auth.signup.diagostic.centerDetails.AddressActivity" />
+        <activity android:name=".activity.auth.signup.diagostic.centerDetails.RegistrationDetailsActivity" />
+        <activity android:name=".activity.auth.signup.diagostic.centerDetails.TypeOfLEActivity" />
+        <activity android:name=".activity.auth.signup.diagostic.DiagnosticActivity" />
+        <activity android:name=".activity.auth.signup.doc.docDetails.ConsultationFeesActivity" />
+        <activity android:name=".activity.auth.signup.doc.docDetails.BanksDetailsActivity" />
+        <activity android:name=".activity.auth.signup.doc.docDetails.ExperienceDetailsActivity" />
+        <activity android:name=".activity.auth.signup.doc.docDetails.SpecializationDetailsActivity" />
+        <activity android:name=".activity.auth.signup.doc.docDetails.EducationDetailsActivity" />
+        <activity android:name=".activity.auth.signup.doc.docDetails.RegistrationDetailsActivity" />
+        <activity android:name=".activity.auth.signup.doc.UploadDoctorActivity" />
+        <activity android:name=".activity.auth.login.LoginActivity" />
+        <activity android:name=".activity.auth.signup.SignUpActivity" />
+        <activity android:name=".activity.auth.signup.doc.DoctorSignUp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".activity.MainActivity" />
     </application>
 
 </manifest>
