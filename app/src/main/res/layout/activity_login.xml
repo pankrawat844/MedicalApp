@@ -5,7 +5,7 @@
     <data>
         <variable
             name="viewmodel"
-            type="com.app.medicalapp.activity.auth.login.LoginViewmodel" />
+            type="com.app.medicalapp.activity.auth.login.LoginViewModel" />
     </data>
 <RelativeLayout
 
@@ -111,7 +111,7 @@
                 android:padding="15dp"
                 android:letterSpacing="0.3"
                 android:text="SIGN UP"
-                android:onClick="@{viewmodel::OnCreateAccountClick}"
+                android:onClick="@{viewmodel::onCreateAccountClick}"
                 android:background="@drawable/rect_white"
                 android:gravity="center"
                 />

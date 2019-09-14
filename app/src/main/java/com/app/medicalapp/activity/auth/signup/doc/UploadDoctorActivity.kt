@@ -1,13 +1,13 @@
-package com.app.medicalapp.activity
+package com.app.medicalapp.activity.auth.signup.doc
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.app.medicalapp.R
 
-class MainActivity : AppCompatActivity() {
+class UploadDoctorActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_upload_doctor)
     }
 }

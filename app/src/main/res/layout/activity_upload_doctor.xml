@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.auth.signup.UploadDoctorActivity">
-
+    tools:context=".activity.auth.signup.doc.UploadDoctorActivity">
 
     <TextView
         android:id="@+id/id_proof"
