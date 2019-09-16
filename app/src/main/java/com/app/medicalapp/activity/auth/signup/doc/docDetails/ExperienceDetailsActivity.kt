@@ -8,19 +8,26 @@ import androidx.appcompat.app.AppCompatActivity
 import com.app.medicalapp.R
 import com.app.medicalapp.databinding.ActivityExperienceDetailsBinding
 import com.app.medicalapp.extentions.setDataBindingContentView
+import kotlinx.android.synthetic.main.custom_toolbar.*
 import java.text.SimpleDateFormat
 import java.util.*
 
 class ExperienceDetailsActivity : AppCompatActivity() {
 
     private var format = SimpleDateFormat("dd MMM, YYYY", Locale.UK)
-    lateinit var binding: ActivityExperienceDetailsBinding
+    private lateinit var binding: ActivityExperienceDetailsBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = setDataBindingContentView(R.layout.activity_experience_details)
+        toolbar.title = "Experience"
+        setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         binding.expr = this
 
+        toolbar.setNavigationOnClickListener {
+            onBackPressed()
+        }
     }
 
     fun datePicker(view: View) {
