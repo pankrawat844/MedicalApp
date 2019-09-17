@@ -23,14 +23,16 @@
         <activity android:name=".activity.auth.signup.doc.docDetails.EducationDetailsActivity" />
         <activity android:name=".activity.auth.signup.doc.docDetails.RegistrationDetailsActivity" />
         <activity android:name=".activity.auth.signup.doc.UploadDoctorActivity" />
-        <activity android:name=".activity.auth.login.LoginActivity" />
-        <activity android:name=".activity.auth.signup.SignUpActivity" />
-        <activity android:name=".activity.auth.signup.doc.DoctorSignUp">
+        <activity android:name=".activity.auth.login.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".activity.auth.signup.SignUpActivity" />
+        <activity android:name=".activity.auth.signup.doc.DoctorSignUp">
+
         </activity>
         <activity android:name=".activity.MainActivity" />
     </application>
