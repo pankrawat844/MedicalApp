@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.app.medicalapp.activity.auth.signup.SignupViewmodel" />
+        <variable name="spinAdapter" type="android.widget.ArrayAdapter"/>
+
+    </data>
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
+    android:background="@color/backgroundColor"
     android:orientation="vertical">
 
 
@@ -26,6 +36,7 @@
                 android:background="#00000000"
                 android:fontFamily="@font/open_sans_regular"
                 android:hint="UserName"
+                android:text="@={viewmodel.name}"
                 android:inputType="textEmailAddress"
                 android:textColor="@color/white"
                 android:textColorHint="#80ffffff" />
@@ -42,6 +53,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="28dp"
                 android:background="#00000000"
+                android:selectedItemPosition="@={viewmodel.categoryIdItemPosition}"
                 android:entries="@array/category" />
 
             <View
@@ -57,8 +69,8 @@
                 android:background="#00000000"
                 android:fontFamily="@font/open_sans_regular"
                 android:hint="MOBILE NO"
-                android:inputType="numberPassword"
-                android:maxLength="6"
+                android:text="@={viewmodel.mobile}"
+                android:inputType="phone"
                 android:textColor="@color/white"
                 android:textColorHint="#80ffffff" />
 
@@ -75,8 +87,8 @@
                 android:background="#00000000"
                 android:fontFamily="@font/open_sans_regular"
                 android:hint="EMAIL ID"
-                android:inputType="numberPassword"
-                android:maxLength="6"
+                android:inputType="textEmailAddress"
+                android:text="@={viewmodel.email}"
                 android:textColor="@color/white"
                 android:textColorHint="#80ffffff" />
 
@@ -93,8 +105,8 @@
                 android:background="#00000000"
                 android:fontFamily="@font/open_sans_regular"
                 android:hint="Password"
-                android:inputType="numberPassword"
-                android:maxLength="6"
+                android:text="@={viewmodel.password}"
+                android:inputType="text"
                 android:textColor="@color/white"
                 android:textColorHint="#80ffffff" />
 
@@ -115,7 +127,7 @@
                 android:letterSpacing="0.5"
                 android:padding="20dp"
                 android:text="NEXT"
-                android:onClick="OnNextClick"
+                android:onClick="@{viewmodel::onNextButtonClick}"
                 android:textColor="@color/black"
                 android:textSize="13.4sp" />
 
@@ -123,3 +135,4 @@
     </ScrollView>
 
 </RelativeLayout>
+</layout>
