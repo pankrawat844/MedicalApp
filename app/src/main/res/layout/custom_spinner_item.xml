@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@android:id/text1"
+        style="@style/spinnerItemStyle"
+        android:singleLine="true"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+    android:fontFamily="@font/open_sans_regular"
+    android:drawableRight="@drawable/ic_chevron_right_black_24dp"/>

@@ -5,14 +5,13 @@
     <data>
         <variable
             name="viewmodel"
-            type="com.app.medicalapp.activity.auth.login.LoginViewModel" />
+            type="com.app.medicalapp.activity.auth.login.LoginViewmodel" />
     </data>
 <RelativeLayout
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/gradient_1"
+    android:background="@color/blue"
     >
 
 
@@ -31,7 +30,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="79.3dp"
                 android:layout_height="125dp"
-                android:src="@drawable/logo_whitecut"/>
+                android:src="@drawable/logo"/>
 
             <EditText
                 android:fontFamily="@font/open_sans_regular"
@@ -111,18 +110,19 @@
                 android:padding="15dp"
                 android:letterSpacing="0.3"
                 android:text="SIGN UP"
-                android:onClick="@{viewmodel::onCreateAccountClick}"
+                android:onClick="@{viewmodel::OnCreateAccountClick}"
                 android:background="@drawable/rect_white"
                 android:gravity="center"
                 />
-       <ProgressBar
-           android:id="@+id/progress"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:layout_gravity="center||center_horizontal"/>
+
         </LinearLayout>
 
     </ScrollView>
-
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
 </RelativeLayout>
 </layout>
