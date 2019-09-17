@@ -14,4 +14,8 @@
     <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
 
     </style>
+    <style name="AppTheme.AppOverLay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+
+    <style name="AppTheme.PopUpOverLay" parent="ThemeOverlay.MaterialComponents.Light" />
+
 </resources>

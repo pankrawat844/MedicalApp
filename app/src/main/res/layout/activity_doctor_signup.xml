@@ -13,20 +13,25 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/gradient_1"
+        android:background="@color/backgroundColor"
         android:orientation="vertical"
         android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="38dp"
-            android:layout_marginRight="38dp"
             android:orientation="vertical">
+
+            <include
+                layout="@layout/custom_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="38dp"
+                android:layout_marginRight="38dp"
                 android:orientation="horizontal"
                 android:weightSum="1">
 
@@ -62,6 +67,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8.8dp"
                         android:background="#00000000"
+                        android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
                         android:fontFamily="@font/open_sans_regular"
                         android:hint="ADD CLINIC"
                         android:onClick="@{signup::addClinicDetails}"
@@ -79,8 +85,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="38dp"
                 android:layout_marginTop="38.8dp"
+                android:layout_marginRight="38dp"
                 android:background="#00000000"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
                 android:fontFamily="@font/open_sans_regular"
                 android:hint="EDUCATION QUALIFICATION"
                 android:onClick="@{signup::educationDetails}"
@@ -90,14 +99,19 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
+                android:layout_marginLeft="38dp"
                 android:layout_marginTop="9dp"
+                android:layout_marginRight="38dp"
                 android:background="#E6ffffff" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="38dp"
                 android:layout_marginTop="38.8dp"
+                android:layout_marginRight="38dp"
                 android:background="#00000000"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
                 android:fontFamily="@font/open_sans_regular"
                 android:hint="REGISTRATION DETAILS"
                 android:onClick="@{signup::registrationDetails}"
@@ -107,14 +121,19 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
+                android:layout_marginLeft="38dp"
                 android:layout_marginTop="9dp"
+                android:layout_marginRight="38dp"
                 android:background="#E6ffffff" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="38dp"
                 android:layout_marginTop="38.8dp"
+                android:layout_marginRight="38dp"
                 android:background="#00000000"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
                 android:fontFamily="@font/open_sans_regular"
                 android:hint="SPECIALIZATION"
                 android:onClick="@{signup::specializationDetails}"
@@ -124,14 +143,19 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
+                android:layout_marginLeft="38dp"
                 android:layout_marginTop="9dp"
+                android:layout_marginRight="38dp"
                 android:background="#E6ffffff" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="38dp"
                 android:layout_marginTop="38.8dp"
+                android:layout_marginRight="38dp"
                 android:background="#00000000"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
                 android:fontFamily="@font/open_sans_regular"
                 android:hint="@string/experience"
                 android:onClick="@{signup::experienceDetails}"
@@ -141,14 +165,19 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
+                android:layout_marginLeft="38dp"
                 android:layout_marginTop="9dp"
+                android:layout_marginRight="38dp"
                 android:background="#E6ffffff" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="38dp"
                 android:layout_marginTop="38.8dp"
+                android:layout_marginRight="38dp"
                 android:background="#00000000"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
                 android:fontFamily="@font/open_sans_regular"
                 android:hint="@string/consultation_fees"
                 android:onClick="@{signup::consultationFees}"
@@ -158,14 +187,19 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
+                android:layout_marginLeft="38dp"
                 android:layout_marginTop="9dp"
+                android:layout_marginRight="38dp"
                 android:background="#E6ffffff" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="38dp"
                 android:layout_marginTop="38.8dp"
+                android:layout_marginRight="38dp"
                 android:background="#00000000"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
                 android:fontFamily="@font/open_sans_regular"
                 android:hint="@string/bank_details"
                 android:onClick="@{signup::bankDetails}"
@@ -175,13 +209,17 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
+                android:layout_marginLeft="38dp"
                 android:layout_marginTop="9dp"
+                android:layout_marginRight="38dp"
                 android:background="#E6ffffff" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="38dp"
                 android:layout_marginTop="38.3dp"
+                android:layout_marginRight="38dp"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/rect_whitefull"
                 android:fontFamily="@font/open_sans_bold"

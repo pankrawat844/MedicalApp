@@ -10,6 +10,7 @@ import com.app.medicalapp.activity.auth.signup.doc.docDetails.*
 import com.app.medicalapp.activity.auth.signup.doc.docDetails.clinicDetails.AddClinicActivity
 import com.app.medicalapp.databinding.ActivityDoctorSignupBinding
 import com.app.medicalapp.extentions.setDataBindingContentView
+import kotlinx.android.synthetic.main.custom_toolbar.*
 
 class DoctorSignUp : AppCompatActivity() {
 
@@ -18,6 +19,8 @@ class DoctorSignUp : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = setDataBindingContentView(R.layout.activity_doctor_signup)
+        toolbar.title = "Medical App"
+        setSupportActionBar(toolbar)
         binding.signup = this
     }
 

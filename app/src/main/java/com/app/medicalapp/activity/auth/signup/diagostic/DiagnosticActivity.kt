@@ -11,6 +11,7 @@ import com.app.medicalapp.activity.auth.signup.diagostic.centerDetails.Registrat
 import com.app.medicalapp.activity.auth.signup.diagostic.centerDetails.TypeOfLEActivity
 import com.app.medicalapp.databinding.ActivityDiagnosticBinding
 import com.app.medicalapp.extentions.setDataBindingContentView
+import kotlinx.android.synthetic.main.custom_toolbar.*
 
 class DiagnosticActivity : AppCompatActivity() {
 
@@ -19,6 +20,8 @@ class DiagnosticActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = setDataBindingContentView(R.layout.activity_diagnostic)
+        toolbar.title = "Diagnostic"
+        setSupportActionBar(toolbar)
         binding.diag = this
     }
 
