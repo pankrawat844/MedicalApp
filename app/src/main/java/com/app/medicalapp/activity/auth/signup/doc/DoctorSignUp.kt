@@ -63,4 +63,10 @@ class DoctorSignUp : AppCompatActivity() {
         startActivity((Intent(this, DiagnosticActivity::class.java)))
         overridePendingTransition(R.anim.slide_up, R.anim.no_animation)
     }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+//        overridePendingTransition(R.anim.slide_down, R.anim.no_animation)
+
+    }
 }
