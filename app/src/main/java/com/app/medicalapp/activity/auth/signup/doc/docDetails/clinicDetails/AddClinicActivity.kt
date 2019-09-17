@@ -2,6 +2,8 @@ package com.app.medicalapp.activity.auth.signup.doc.docDetails.clinicDetails
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.app.medicalapp.R
@@ -28,5 +30,20 @@ class AddClinicActivity : AppCompatActivity() {
 
     fun addAddress(view: View) {
         startActivity(Intent(this, ClinicAddressActivity::class.java))
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.save_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when(item.itemId) {
+            R.id.save ->  {
+
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 }

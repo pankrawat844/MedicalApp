@@ -2,6 +2,8 @@ package com.app.medicalapp.activity.auth.signup.doc.docDetails
 
 import android.app.DatePickerDialog
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -48,5 +50,20 @@ class ExperienceDetailsActivity : AppCompatActivity() {
             calendar.get(Calendar.DAY_OF_MONTH)
         )
         datePicker.show()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.save_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when(item.itemId) {
+            R.id.save ->  {
+
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 }

@@ -164,7 +164,7 @@
             app:layout_constraintStart_toStartOf="@+id/textView16"
             app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
-        <Button
+        <!--<Button
             android:id="@+id/button9"
             android:layout_width="200dp"
             android:layout_height="60dp"
@@ -174,7 +174,7 @@
             app:backgroundTint="@color/design_dark_default_color_primary_variant"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view10" />
+            app:layout_constraintTop_toBottomOf="@+id/view10" />-->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
