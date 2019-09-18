@@ -1,18 +1,13 @@
 package com.app.medicalapp.activity.auth.signup
 
-import android.content.Context
-import android.content.SharedPreferences
 import android.view.View
 import android.widget.Toast
-import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.app.medicalapp.activity.auth.AuthListner
 import com.app.medicalapp.room.AppDatabase
 import com.app.medicalapp.room.entities.Doctor
 import com.app.medicalapp.utils.Coroutines
-import android.widget.AdapterView
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
-import androidx.lifecycle.MutableLiveData
 
 
 class SignupViewmodel(
@@ -62,10 +57,14 @@ class SignupViewmodel(
         }
 
         Coroutines.main {
-            Toast.makeText(view.context,categoryIdValue,Toast.LENGTH_SHORT).show()
+            //            Toast.makeText(view.context,categoryIdValue,Toast.LENGTH_SHORT).show()
 
             val doctor=Doctor("1",name!!,email!!,categoryIdValue!!,password!!,mobile!!)
-        db.getDoctorDetail().updatenInsert(doctor)
+            val resutl = db.getDoctorDetail().updatenInsert(doctor)
+//            Toast.makeText(view.context, resutl as String,Toast.LENGTH_SHORT).show()
+            if (resutl != null) {
+                authListner?.OnSuccess(categoryIdValue!!)
+            }
         }
 
     }

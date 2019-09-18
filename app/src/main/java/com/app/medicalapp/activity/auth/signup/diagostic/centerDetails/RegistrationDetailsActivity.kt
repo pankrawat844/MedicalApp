@@ -11,7 +11,7 @@ class RegistrationDetailsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_registration_details2)
+        setContentView(R.layout.activity_registration_company)
         toolbar.title = "Registration"
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)

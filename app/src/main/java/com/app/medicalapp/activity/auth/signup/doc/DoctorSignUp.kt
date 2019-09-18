@@ -15,6 +15,13 @@ import kotlinx.android.synthetic.main.custom_toolbar.*
 class DoctorSignUp : AppCompatActivity() {
 
     private lateinit var binding: ActivityDoctorSignupBinding
+    val ADDCLINICRESULT: Int = 1
+    val ADDEDUCATIONCRESULT: Int = 2
+    val ADDREGiSTRATIONRESULT: Int = 3
+    val ADDSPECIALIZATIONRESULT: Int = 4
+    val ADDEXPERCIENCERESULT: Int = 5
+    val ADDCONSULTRESULT: Int = 6
+    val ADDBANKDETAILSRESULT: Int = 7
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,12 +32,15 @@ class DoctorSignUp : AppCompatActivity() {
     }
 
     fun addClinicDetails(view: View) {
-        startActivity(Intent(this, AddClinicActivity::class.java))
+        startActivityForResult(Intent(this, AddClinicActivity::class.java), ADDCLINICRESULT)
         overridePendingTransition(R.anim.slide_up, R.anim.no_animation)
     }
 
     fun educationDetails(view: View) {
-        startActivity((Intent(this, EducationDetailsActivity::class.java)))
+        startActivityForResult(
+            (Intent(this, EducationDetailsActivity::class.java)),
+            ADDEDUCATIONCRESULT
+        )
         overridePendingTransition(R.anim.slide_up, R.anim.no_animation)
     }
 
@@ -64,9 +74,4 @@ class DoctorSignUp : AppCompatActivity() {
         overridePendingTransition(R.anim.slide_up, R.anim.no_animation)
     }
 
-    override fun onBackPressed() {
-        super.onBackPressed()
-//        overridePendingTransition(R.anim.slide_down, R.anim.no_animation)
-
-    }
 }

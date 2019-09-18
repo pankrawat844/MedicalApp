@@ -11,10 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/backgroundColor"
-        tools:context=".activity.auth.signup.doc.docDetails.RegistrationDetailsActivity">
+        tools:context=".activity.auth.signup.diagostic.centerDetails.RegistrationDetailsActivity">
 
         <include
-            android:id="@+id/include4"
+            android:id="@+id/include11"
             layout="@layout/custom_toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -22,76 +22,43 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/reg_no"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="38.8dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginRight="30dp"
-            android:background="#00000000"
-            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
-            android:fontFamily="@font/open_sans_regular"
-            android:hint="REGISTRATION NUMBER"
-            android:textColor="@color/white"
-            android:textColorHint="#80ffffff"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/include4" />
-
-        <View
-            android:id="@+id/view5"
-
-            android:layout_width="0dp"
-            android:layout_height="2dp"
-            android:layout_marginTop="9dp"
-            android:background="#E6ffffff"
-            app:layout_constraintEnd_toEndOf="@+id/reg_no"
-            app:layout_constraintStart_toStartOf="@+id/reg_no"
-            app:layout_constraintTop_toBottomOf="@+id/reg_no" />
-
         <EditText
-            android:id="@+id/reg_council"
+            android:id="@+id/company_iden_no"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="38.8dp"
             android:layout_marginEnd="30dp"
             android:layout_marginRight="30dp"
             android:background="#00000000"
             android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
             android:fontFamily="@font/open_sans_regular"
-            android:hint="REGISTRATION COUNCIL"
+            android:hint="COMPANY IDENTIFICATION NUMBER"
             android:textAllCaps="true"
             android:textColor="@color/white"
             android:textColorHint="#80ffffff"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/reg_no" />
+            app:layout_constraintTop_toBottomOf="@+id/include11" />
 
         <View
-            android:id="@+id/view2"
-
+            android:id="@+id/view1"
             android:layout_width="0dp"
             android:layout_height="2dp"
             android:layout_marginTop="9dp"
             android:background="#E6ffffff"
-            app:layout_constraintEnd_toEndOf="@+id/reg_council"
-            app:layout_constraintStart_toStartOf="@+id/reg_council"
-            app:layout_constraintTop_toBottomOf="@+id/reg_council" />
+            app:layout_constraintEnd_toEndOf="@+id/company_iden_no"
+            app:layout_constraintStart_toStartOf="@+id/company_iden_no"
+            app:layout_constraintTop_toBottomOf="@+id/company_iden_no" />
 
-
-        <TextView
-            android:id="@+id/reg_year"
+        <EditText
+            android:id="@+id/date_of_reg"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="38.8dp"
             android:layout_marginEnd="30dp"
             android:layout_marginRight="30dp"
@@ -105,31 +72,97 @@
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/reg_council" />
+            app:layout_constraintTop_toBottomOf="@+id/view1" />
 
         <View
             android:id="@+id/view3"
-
             android:layout_width="0dp"
             android:layout_height="2dp"
             android:layout_marginTop="9dp"
             android:background="#E6ffffff"
-            app:layout_constraintEnd_toEndOf="@+id/reg_year"
-            app:layout_constraintStart_toStartOf="@+id/reg_year"
-            app:layout_constraintTop_toBottomOf="@+id/reg_year" />
+            app:layout_constraintEnd_toEndOf="@+id/date_of_reg"
+            app:layout_constraintStart_toStartOf="@+id/date_of_reg"
+            app:layout_constraintTop_toBottomOf="@+id/date_of_reg" />
+
+
+        <EditText
+            android:id="@+id/gst_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="38.8dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#00000000"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:fontFamily="@font/open_sans_regular"
+            android:hint="GST NUMBER"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textColorHint="#80ffffff"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="9dp"
+            android:background="#E6ffffff"
+            app:layout_constraintEnd_toEndOf="@+id/gst_no"
+            app:layout_constraintStart_toStartOf="@+id/gst_no"
+            app:layout_constraintTop_toBottomOf="@+id/gst_no" />
+
+
+        <EditText
+            android:id="@+id/pan_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="38.8dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#00000000"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:fontFamily="@font/open_sans_regular"
+            android:hint="PAN NUMBER"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textColorHint="#80ffffff"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="9dp"
+            android:background="#E6ffffff"
+            app:layout_constraintEnd_toEndOf="@+id/pan_no"
+            app:layout_constraintStart_toStartOf="@+id/pan_no"
+            app:layout_constraintTop_toBottomOf="@+id/pan_no" />
 
 
         <!--<Button
-            android:id="@+id/button2"
+            android:id="@+id/button8"
             android:layout_width="200dp"
             android:layout_height="60dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="16dp"
             android:background="@drawable/rect_white_with_border"
             android:text="Save"
             android:textColor="@color/design_dark_default_color_secondary"
-            app:backgroundTint="@color/design_default_color_primary"
+            app:backgroundTint="@color/design_dark_default_color_primary_variant"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout6" />-->
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout18"
+            app:layout_constraintVertical_bias="0.0" />-->
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -26,7 +26,7 @@ class LoginActivity : AppCompatActivity(), AuthListner {
     override fun onStarted() {
     }
 
-    override fun OnSuccess() {
+    override fun OnSuccess(msg: String) {
     }
 
     override fun OnFailure(msg: String) {

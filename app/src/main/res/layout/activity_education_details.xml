@@ -21,65 +21,105 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout"
+        <EditText
+            android:id="@+id/state"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="38.8dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#00000000"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:fontFamily="@font/open_sans_regular"
+            android:hint="DEGREE"
+            android:textColor="@color/white"
+            android:textColorHint="#80ffffff"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/include3" />
+
+        <View
+            android:id="@+id/view5"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginTop="100dp"
-            android:layout_marginEnd="32dp"
-            android:layout_marginRight="32dp"
-            app:errorEnabled="false"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/include3">
+            android:layout_height="2dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#E6ffffff"
+            app:layout_constraintEnd_toEndOf="@+id/state"
+            app:layout_constraintStart_toStartOf="@+id/state"
+            app:layout_constraintTop_toBottomOf="@+id/state" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Degree" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout2"
+        <EditText
+            android:id="@+id/collage"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="32dp"
-            android:layout_marginRight="32dp"
-            app:errorEnabled="false"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="38.8dp"
+            android:layout_marginEnd="30dp"
+            android:background="#00000000"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:fontFamily="@font/open_sans_regular"
+            android:hint="COLLEGE/UNIVERSITY"
+            android:textColor="@color/white"
+            android:textColorHint="#80ffffff"
+            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+            app:layout_constraintTop_toBottomOf="@id/view5" />
 
-            <com.google.android.material.textfield.TextInputEditText
+        <View
+            android:id="@+id/view2"
+            android:layout_height="2dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="9dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="College/University" />
-        </com.google.android.material.textfield.TextInputLayout>
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#E6ffffff"
+            app:layout_constraintEnd_toEndOf="@+id/collage"
+            app:layout_constraintStart_toStartOf="@+id/collage"
+            app:layout_constraintTop_toBottomOf="@+id/collage" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout3"
+        <EditText
+            android:id="@+id/pass_year"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="32dp"
-            android:layout_marginRight="32dp"
-            app:errorEnabled="false"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="38.8dp"
+            android:layout_marginEnd="30dp"
+            android:background="#00000000"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:fontFamily="@font/open_sans_regular"
+            android:hint="PASSOUT YEAR"
+            android:textColor="@color/white"
+            android:textColorHint="#80ffffff"
+            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+            app:layout_constraintTop_toBottomOf="@id/view2" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Passed-out Year" />
-        </com.google.android.material.textfield.TextInputLayout>
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#E6ffffff"
+            app:layout_constraintEnd_toEndOf="@+id/pass_year"
+            app:layout_constraintStart_toStartOf="@+id/pass_year"
+            app:layout_constraintTop_toBottomOf="@+id/pass_year" />
 
         <!--<com.google.android.material.button.MaterialButton
             android:id="@+id/button"
